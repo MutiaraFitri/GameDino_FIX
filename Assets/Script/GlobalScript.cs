@@ -29,6 +29,7 @@ public class GlobalScript : MonoBehaviour
     {
         if(gameOver){
             PanelGameOver.gameObject.SetActive(true);
+            SoundEffectManager.Instance.GameOverSFX();
         }
     }
 
@@ -45,7 +46,8 @@ public class GlobalScript : MonoBehaviour
     }
 
     public void matiJatuh(){
-            gameOver = true;      
+            gameOver = true; 
+            SoundEffectManager.Instance.GameOverSFX();     
     }
 
     public float getHealthAwal(){
