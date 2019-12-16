@@ -21,6 +21,7 @@ public class CoinScript : MonoBehaviour
             print ("kena");
             Destroy(this.gameObject);
             GlobalScript.Instance.score += 1;
+            SoundEffectManager.Instance.PlayCoinSFX();
         }        
     }
 }
