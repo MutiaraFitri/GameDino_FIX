@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GlobalScript : MonoBehaviour
 {
@@ -64,5 +65,16 @@ public class GlobalScript : MonoBehaviour
     {
         isPause=false;
         panelPause.gameObject.SetActive(false);
+    }
+
+    public void Restart()
+    {
+          
+        SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex);
+    }
+
+    public void Home()
+    {
+        SceneManager.LoadScene("main_menu");
     }
 }
