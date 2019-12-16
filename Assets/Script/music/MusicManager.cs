@@ -33,7 +33,7 @@ public class MusicManager : MonoBehaviour
     public void setVolume(){
         bgmSource.volume= musicSlider.value;
         PlayerPrefs.SetFloat("musicVolume", bgmSource.volume); // ini untuk save mode
-
+        
     }
 
     // Update is called once per frame

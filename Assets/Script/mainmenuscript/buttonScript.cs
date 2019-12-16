@@ -19,6 +19,13 @@ public class buttonScript : MonoBehaviour
     public void playButtons(){
             Application.LoadLevel("map");
     }
+    public void settingButtons(){
+            Application.LoadLevel("map");
+    }
+    public void quitButtons(){
+            Application.Quit();
+    }
+     
     public void level2(){
             Application.LoadLevel("Hutan");
     }
